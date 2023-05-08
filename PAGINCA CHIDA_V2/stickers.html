@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--===== Boxicons CSS =====-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="src/styles/background_styles.css">
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/styles_stic.css">
+  <link rel="stylesheet" href="src/styles/styles_footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="src/scripts/script.js" defer></script>
+  <title>ORLANDO</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">ORLANDO</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a id="home" href="index.html">INICIO</a></li>
+        <li><a id="viniles" href="viniles.html">VINILES</a></li>
+        <li><a id="posters" href="posters.html">POSTERS</a></li>
+        <li><a id="stickers" href="stickers.html">STICKERS</a></li>
+        <li><a id="tazas" href="tazas.html">TAZAS</a></li>
+        <li><a id="playeras" href="playeras.html">PLAYERAS</a></li>
+        <li><a id="contacto" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="search-box">
+      <i class="bx bx-search"></i>
+      <input type="text" placeholder="BUSCA UNA IMAGEN O MARCA">
+    </div>
+    <div class="images">
+      <div class="image-box" data-name="motos">
+        <img class="image" src="src/img/stickers/0.png" alt="">
+        <div class="capa"><h6>four Riders</h6></div>
+      </div>
+      <div class="image-box" data-name="elden ring">
+        <img class="image" src="src/img/stickers/1.jpg" alt="">
+        <div class="capa"><h6>alexander</h6></div>
+      </div>
+      <div class="image-box" data-name="dragon">
+        <img class="image" src="src/img/stickers/2.jpg" alt="">
+        <div class="capa"><h6>dragon</h6></div>
+      </div>
+      <div class="image-box" data-name="motos">
+        <img class="image" src="src/img/stickers/3.jpg" alt="">
+        <div class="capa"><h6>jesus en motocicleta</h6></div>
+      </div>
+      <div class="image-box" data-name="motos">
+        <img class="image" src="src/img/stickers/4.jpg" alt="">
+        <div class="capa"><h6>casco</h6></div>
+      </div>
+      <div class="image-box" data-name="musica">
+        <img class="image" src="src/img/stickers/5.jpg" alt="">
+        <div class="capa"><h6>freedy Mercury</h6></div>
+      </div>
+      <div class="image-box" data-name="musica">
+        <img class="image" src="src/img/stickers/6.jpg" alt="">
+        <div class="capa"><h6>ac/dc</h6></div>
+      </div>
+      <div class="image-box" data-name="musica">
+        <img class="image" src="src/img/stickers/7.jpg" alt="">
+        <div class="capa"><h6>gorillaz</h6></div>
+      </div>
+      <div class="image-box" data-name="motos">
+        <img class="image" src="src/img/stickers/8.jpg" alt="">
+        <div class="capa"><h6>moto 1</h6></div>
+      </div>
+    </div>
+    <div class="popup-img">
+      <span>&times;</span>
+      <img src="src/img/vinilos/1.png" alt="">
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.images .image-box img').forEach(image =>{
+      image.onclick = () =>{
+        document.querySelector('.popup-img').style.display = 'block';
+        document.querySelector('.popup-img img').src = image.getAttribute('src');
+      }
+    });
+    document.querySelector('.popup-img span').onclick = () =>{
+      document.querySelector('.popup-img').style.display = 'none';
+    }
+  </script>
+  <script src="src/scripts/script_gallery.js"></script>
+
+    <!--////////////////////////////////////-->  
+      <div class="hidden-print" id="button-up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    <!--////////////////////////////////////--> 
+
+  <footer>
+    <div class="content">
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © <span id="year"></span> <a href="#">Orlando.</a>Todos los derechos reservados</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

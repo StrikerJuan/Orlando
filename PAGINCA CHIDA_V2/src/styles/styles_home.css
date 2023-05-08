@@ -1,0 +1,15 @@
+div.imagen img{
+    width: 35%;
+	height: auto;
+	border: 0;
+    /*display: flex;
+	justify-content: center;
+	align-items: center;*/
+    padding-top: 0rem;
+}
+div.imagen{
+	text-align: center;
+}
+.navbar-links li #home{
+    background-color: #555;
+}

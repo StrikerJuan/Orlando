@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--===== Boxicons CSS =====-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="src/styles/background_styles.css">
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/styles_contacto.css">
+  <link rel="stylesheet" href="src/styles/styles_footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="src/scripts/script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!--<script src="src/scripts/script_contacto.js"></script>-->
+  <title>ORLANDO</title>
+  <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("IcF_em4TtLB-fpOB6");
+    })();
+  </script>-->
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">ORLANDO</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a id="home" href="index.html">INICIO</a></li>
+        <li><a id="viniles" href="viniles.html">VINILES</a></li>
+        <li><a id="posters" href="posters.html">POSTERS</a></li>
+        <li><a id="stickers" href="stickers.html">STICKERS</a></li>
+        <li><a id="tazas" href="tazas.html">TAZAS</a></li>
+        <li><a id="playeras" href="playeras.html">PLAYERAS</a></li>
+        <li><a id="contacto" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <form action="https://formsubmit.co/e8598c09869284301c7bdf2b0ac5b80f" method="POST">
+      <!--Honeypot-->
+      <input type="text" name="_honey" style="display: none;">
+      <!--Quita Captcha-->
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="hidden" name="_text" value="https://strikerjuan.github.io/formsubmitdemo/index.html">
+
+      <h3>Mantente en contacto</h3>
+      <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required>
+      <input type="email" id="email" name="Correo" placeholder="Tu correo" required>
+      <input type="text" id="telefono" name="Telefono" placeholder="Tu numero"required>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" name="Mensaje"
+        placeholder="¿Cómo te podemos ayudar?"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="src/scripts/script_gallery.js"></script>
+  <footer>
+    <div class="content">
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2023 <a href="#">Orlando.</a>Todos los derechos reservados</span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
